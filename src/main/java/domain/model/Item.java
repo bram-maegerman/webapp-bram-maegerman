@@ -1,4 +1,4 @@
-package domain;
+package domain.model;
 
 public class Item {
 
@@ -13,6 +13,14 @@ public class Item {
         this.prijs = prijs;
         this.hoeveelheid = hoeveelheid;
         this.kleur = kleur;
+    }
+
+    public void pasAan(){
+
+    }
+
+    public void verwijder(){
+
     }
 
     public int getId() {

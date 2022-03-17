@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        <li><a href="Controller?command=index">Home</a></li>
+        <li><a href="Controller?command=voegToe">Voeg Toe</a></li>
+        <li><a href="Controller?command=overzicht">0verzicht</a></li>
+    </ul>
+</nav>
