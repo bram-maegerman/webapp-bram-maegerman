@@ -26,8 +26,8 @@
             </tr>
         </thead>
         <tbody>
-            <%  List<Item> lijst = (List<Item>) request.getAttribute("lijst");
-                for(Item i : lijst){ %>
+            <%  List<Item> lijst = (List<Item>) request.getAttribute("lijst");%>
+            <% for(Item i : lijst){ %>
                 <tr>
                     <td><%=i.getNaam()%></td>
                     <td><%=i.getPrijs()%></td>
