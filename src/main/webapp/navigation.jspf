@@ -1,7 +1,8 @@
 <nav>
     <ul>
-        <li><a href="Controller?command=index">Home</a></li>
-        <li><a href="Controller?command=voegToe">Voeg Toe</a></li>
-        <li><a href="Controller?command=overzicht">0verzicht</a></li>
+        <li><a href="Controller?command=index" id="indexPage">Home</a></li>
+        <li><a href="Controller?command=voegToe">Toevoegen</a></li>
+        <li><a href="Controller?command=zoek" id="zoekPage">Zoek</a></li>
+        <li><a href="Controller?command=overzicht" id="overzichtPage">0verzicht</a></li>
     </ul>
 </nav>

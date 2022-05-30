@@ -46,27 +46,103 @@ main{
     margin: 20px;
 }
 
+main > p{
+    margin-bottom: 10px;
+}
+
 h2{
     margin-bottom: 20px;
 }
 
-form{
+main > form{
     padding-left: 20px;
 }
 
-form > label{
-    width: 20%;
-    display: inline-block;
-    padding-bottom: 15px;
+main > ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style: none;
 }
 
-tr{
-    padding-bottom: 30px;
+form > p{
+    width: 40%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 0.4em;
 }
 
-th, td{
+form > button{
+    margin-top: 0.3em;
+}
+
+button{
+    padding: 5px 10px;
+}
+
+tr, th{
+    width: 10%;
+}
+
+table{
+    margin: 30px 0px;
     text-align: left;
-    padding-right: 60px;
+}
+
+.zoek-resultaat{
+    display: flex;
+    align-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.zoek-resultaat > div{
+    flex-basis: 50%;
+}
+
+.index-verwijder-resultaat{
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 5px;
+    width: 50%;
+}
+.index-verwijder-resultaat > div{
+    flex-basis: 30%;
+}
+.index-verwijder-resultaat > p{
+    width: 100%;
+}
+
+
+main#index > form.button-form{
+    padding: 0px;
+}
+
+.delete-confirm{
+    width: 50%;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.delete-confirm > p{
+    flex-basis: 100%;
+}
+.delete-confirm-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.button-form{
+    margin-right: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+  color: grey;
+  text-decoration: underline;
 }
 
 footer{

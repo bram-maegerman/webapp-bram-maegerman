@@ -1,5 +1,7 @@
 package domain.model;
 
+import domain.DomainException;
+
 public class Item {
 
     private int id;
@@ -15,48 +17,51 @@ public class Item {
         this.kleur = kleur;
     }
 
-    public void pasAan(){
-
-    }
-
-    public void verwijder(){
-
-    }
+    public Item(){}
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNaam() {
         return naam;
     }
 
-    public void setNaam(String naam) {
-        this.naam = naam;
-    }
-
     public double getPrijs() {
         return prijs;
-    }
-
-    public void setPrijs(double prijs) {
-        this.prijs = prijs;
     }
 
     public int getHoeveelheid() {
         return hoeveelheid;
     }
 
-    public void setHoeveelheid(int hoeveelheid) {
-        this.hoeveelheid = hoeveelheid;
-    }
-
     public String getKleur() {
         return kleur;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setNaam(String naam) {
+        if(naam.isBlank()){
+            throw new DomainException("Naam mag niet enkel bestaan uit spaties.");
+        }
+        this.naam = naam;
+    }
+
+    public void setPrijs(double prijs) {
+        if(prijs < 0){
+            throw new DomainException("Prijs mag niet kleiner zijn dan 0.");
+        }
+        this.prijs = prijs;
+    }
+
+    public void setHoeveelheid(int hoeveelheid) {
+        if(hoeveelheid < 1){
+            throw new DomainException("Hoeveelheid mag niet kleiner zijn dan 1.");
+        }
+        this.hoeveelheid = hoeveelheid;
     }
 
     public void setKleur(String kleur) {
